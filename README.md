@@ -12,7 +12,7 @@ Hello and welcome to the ML Ops course! Follow these steps to get your environme
 
 and then click "New" (the green button).
 
-![repositories new](./images/github_new_repository_button.JPG)
+![github_new_repository_button](https://user-images.githubusercontent.com/72572922/160047110-cfd04964-f235-4c50-b10c-06176f463fb9.jpg)
 
 5. Create the repository by inputting the following:
 * Repo name
@@ -24,8 +24,8 @@ and then click "New" (the green button).
 
 Then hit "Create Repository".
 
-![create repo](./images/github_create_repo.JPG)
+![github_create_repo](https://user-images.githubusercontent.com/72572922/160047121-b54a582b-da8e-434b-8ca3-05808a1b9b75.jpg)
 
 6. Now that you have a repo, go to the code section and copy the HTTPS address so you can clone your repo to your local computer.
 
-![clone repo](./images/github_clone.JPG)
+![github_clone](https://user-images.githubusercontent.com/72572922/160047124-66d241d4-59e3-45cf-92b3-fa1e74c12cfd.jpg)
