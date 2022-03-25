@@ -46,4 +46,4 @@ Then hit "Create Repository".
 
 ![github_create_repo](https://user-images.githubusercontent.com/72572922/160047121-b54a582b-da8e-434b-8ca3-05808a1b9b75.jpg)
 
-# All set for now!
+# That's it for now!  And so it begins.... :)
