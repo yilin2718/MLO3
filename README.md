@@ -1,5 +1,5 @@
 # Welcome to MLOps Cohort 3 (March 2022)!
-Hello and welcome to the ML Ops course! Follow these steps to get your environment set up and review basic terminal skills. At the end you'll have your first project set up and ready to go.
+Hi and welcome to MLOps! Follow these steps to get your development environment teed up and aligned to the rest of the class.  This will ensure that we can hit the ground running this Saturday!
 
 ## Getting Started with the Unix Command Line
 *For Windows users only we highly recommend...*
