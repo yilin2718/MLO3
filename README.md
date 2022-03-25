@@ -19,14 +19,15 @@ Give it a test drive!
 ### Python and ML toolkits,
 1. Install [Anaconda](https://www.anaconda.com/products/individual).
 
-## Version Control, and
+### Version Control, and
 2. Install [Git](https://git-scm.com/downloads).
 
-## Your Interactive Development Environment (IDE)
-5. Install [VS Code](https://code.visualstudio.com/download).
+### Your Interactive Development Environment (IDE)
+3. Install [VS Code](https://code.visualstudio.com/download).
 
+## Finally, make sure that GitHub is ready to roll
 
-7. If you don't already have one, make an account on [Github](https://github.com/). Then login and navigate to the top right user icon, click it, go to repositories, 
+If you don't already have one, make an account on [Github](https://github.com/). Then login and navigate to the top right user icon, click it, go to repositories, 
    
 ![github_repositories_button](https://user-images.githubusercontent.com/72572922/160047069-972923a9-6b9d-4f08-893c-efc75f6840f1.jpg)
 
@@ -46,6 +47,4 @@ Then hit "Create Repository".
 
 ![github_create_repo](https://user-images.githubusercontent.com/72572922/160047121-b54a582b-da8e-434b-8ca3-05808a1b9b75.jpg)
 
-6. Now that you have a repo, go to the code section and copy the HTTPS address so you can clone your repo to your local computer.
-
-![github_clone](https://user-images.githubusercontent.com/72572922/160047124-66d241d4-59e3-45cf-92b3-fa1e74c12cfd.jpg)
+# All set for now!
