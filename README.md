@@ -8,7 +8,7 @@ Hello and welcome to the ML Ops course! Follow these steps to get your environme
 3. Install [VS Code](https://code.visualstudio.com/download).
 4. If you don't already have one, make an account on [Github](https://github.com/). Then login and navigate to the top right user icon, click it, go to repositories, 
    
-![repositories button](./images/github_repositories_button.JPG)
+![github_repositories_button](https://user-images.githubusercontent.com/72572922/160047069-972923a9-6b9d-4f08-893c-efc75f6840f1.jpg)
 
 and then click "New" (the green button).
 
