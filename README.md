@@ -2,7 +2,7 @@
 Hi and welcome to MLOps! Follow these steps to get your development environment teed up and aligned to the rest of the class.  This will ensure that we can hit the ground running this Saturday!
 
 ## Getting Started with the Unix Command Line
-*For Windows users only we highly recommend...
+*For Windows users only
 * Install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install)
 * Install [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) (You can even make it your [default!](https://devblogs.microsoft.com/commandline/windows-terminal-as-your-default-command-line-experience/))
 * Install [Ubuntu](https://www.microsoft.com/en-us/p/ubuntu/9pdxgncfsczv?activetab=pivot:overviewtab)
@@ -11,7 +11,8 @@ Give it a test drive!
 
 ![WindowsTerminal](https://user-images.githubusercontent.com/72572922/160048214-37f08855-8b29-4c13-9d25-e0f69806f752.jpg)
 
-*For Mac users, just open [Terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac)
+*For Mac or Linux users
+* Just open [Terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac), lol (MacOS and Linux/Ubuntu/Debian, etc. are all Unix-based)
 
 ## These are for everyone!  Enable...
 
