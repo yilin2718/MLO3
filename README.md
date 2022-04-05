@@ -2,7 +2,6 @@
      width="150px"
      height="auto"/>
      <br>
-     <br>
 </p>
 
 # Welcome to MLOps Cohort 3 (March 2022)!
