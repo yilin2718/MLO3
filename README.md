@@ -1,3 +1,10 @@
+<p align = "center"><img src="https://user-images.githubusercontent.com/72572922/161854387-800c80b8-c7a1-4e50-a8c5-c749adbec747.png" 
+     width="200px"
+     height="auto"/>
+
+</p>
+
+
 # Welcome to MLOps Cohort 3 (March 2022)!
 Hi and welcome to MLOps! Follow these steps to get your development environment teed up and aligned to the rest of the class.  This will ensure that we can hit the ground running this Saturday!
 
