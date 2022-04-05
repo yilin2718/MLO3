@@ -18,5 +18,5 @@ So specifically, here is what we would like to see:
 8. Commit this to your repo and turn in your Github link through Canvas.
 
 ## Things to consider:
-* Use `hugging_reddit.ipynb` from class to get you started. Updated complete version is in the code directory of this repo.
+* Use [`hugging_reddit.ipynb`](/code/reddit/hugging_reddit.ipynb) from class to get you started. Updated complete version is in the code directory of this repo.
 * If you want to explore other model zoo's (particularly any that you'll use for your capstone) you can do so and apply them here. Otherwise, just use HuggingFace!
