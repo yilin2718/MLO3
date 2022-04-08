@@ -78,6 +78,7 @@ If you don't already have one, make an account on [Github](https://github.com/)
 
 <details>
   <summary>Viewing the Repositories</summary><br>
+     
 Login and click on the top right user icon, then go to `repositories`. 
 
 <p align="center">
