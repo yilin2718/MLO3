@@ -1,55 +1,117 @@
-<p href="https://www.fourthbrain.ai/" align = "center"><img src="https://user-images.githubusercontent.com/72572922/161854387-800c80b8-c7a1-4e50-a8c5-c749adbec747.png"
-     width="150px"
+
+<p align = "center" draggable=”false” ><img src="https://user-images.githubusercontent.com/37101144/161836199-fdb0219d-0361-4988-bf26-48b0fad160a3.png" 
+     width="200px"
      height="auto"/>
-     <br>
 </p>
 
-# Welcome to MLOps Cohort 3 (March 2022)!
-Hi and welcome to MLOps! Follow these steps to get your development environment teed up and aligned to the rest of the class.  This will ensure that we can hit the ground running this Saturday!
 
-## Getting Started with the Unix Command Line
-*For Windows users only
-* Install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install)
+
+# <h1 align="center" id="heading">:wave: Welcome to MLOps Cohort 3 (March 2022)!</h1>
+
+<details>
+  <summary>Contents</summary>
+
+- [:wave: Welcome!](#heading)
+- [:rocket: Let's Get Started!](#getting-started-with-the-unix-command-line)
+    - [Windows](#getting-started-with-the-unix-command-line)
+    - [Mac](#Mac)
+- [:octocat: Getting Started](#getting-started-with-the-unix-command-line)
+    - [Windows](#getting-started-with-the-unix-command-line)
+    - [Mac](#Mac)
+</details>
+
+Welcome to MLOps! :tada: Follow these steps to get your development environment teed up and aligned to the rest of the class.  This will ensure that we can hit the ground running this Saturday! :running:
+
+
+## :rocket: Let's Get Started! 
+
+<details>
+  <summary>Windows</summary>
+
+
+* Install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install) using Powershell
+
+```powershell
+wsl --install -d Ubuntu-20.04
+```
 * Install [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) (You can even make it your [default!](https://devblogs.microsoft.com/commandline/windows-terminal-as-your-default-command-line-experience/))
 * Install [Ubuntu](https://www.microsoft.com/en-us/p/ubuntu/9pdxgncfsczv?activetab=pivot:overviewtab)
 
-Give it a test drive!
+Give it a test drive! 
 
 ![WindowsTerminal](https://user-images.githubusercontent.com/72572922/160048214-37f08855-8b29-4c13-9d25-e0f69806f752.jpg)
 
-*For Mac or Linux users
-* Just open [Terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac), lol (MacOS and Linux/Ubuntu/Debian, etc. are all Unix-based)
+Continue by installing the following tools using [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) to setup your environment. When prompted, make sure to add `conda` to `init`.
+     
+| Tool | Purpose | Command                                                                                           |
+| :-------- | :-------- | :------------------------------------------------------------------------------------------------ |
+| :snake: **Anaconda**  | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2021.11-Linux-x86_64.sh` <br> `bash Anaconda3-2021.11-Linux-x86_64.sh` <br> `source ~/.bashrc` |
+| :octocat: **Git**  | Version Control | `sudo apt update && sudo apt upgrade` <br> `sudo apt install git-all`   |
+| :memo: **VS Code** | Development Environment | [Download](https://code.visualstudio.com/download) (Windows version)|
+</details>
 
-## These ones are for everyone (Mac AND Windows)!
+<details>
+  <summary>Linux (Debian/Ubuntu)</summary><br>
+     
+Open terminal using <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>. Enter the following commands in terminal to setup your environment. When prompted, make sure to add `conda` to `init`.
+| Tool | Purpose | Command                                                                                           |
+| :-------- | :-------- | :------------------------------------------------------------------------------------------------ |
+| :snake: **Anaconda**  | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2021.11-Linux-x86_64.sh` <br> `bash Anaconda3-2021.11-Linux-x86_64.sh` <br> `source ~/.bashrc` |
+| :octocat: **Git**  | Version Control | `sudo apt update && sudo apt upgrade` <br> `sudo apt install git-all`   |
+| :memo: **VS Code** | Development Environment | [Download](https://code.visualstudio.com/download) |
+</details>
 
-### Python and ML toolkits,
-1. Install [Anaconda](https://www.anaconda.com/products/individual)
+<details>
+  <summary>macOS</summary><br>
 
-### Version Control, and
-2. Install [Git](https://git-scm.com/downloads)
+Open terminal using <kbd>⌘</kbd>+<kbd>Space</kbd> and type `terminal`. Enter the following commands in terminal to setup your environment. When prompted, make sure to add `conda` to `init`.
+| Tool | Purpose | Command                                                                                           |
+| :-------- | :-------- | :------------------------------------------------------------------------------------------------ |
+| :snake: **Anaconda**  | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2021.11-MacOSX-x86_64.sh` <br> `bash Anaconda3-2021.11-MacOSX-x86_64.sh` <br> `source ~/.bashrc` |
+| :octocat: **Git**  | Version Control | `sudo apt update && sudo apt upgrade` <br> `sudo apt install git-all`   |
+| :memo: **VS Code** | Development Environment | [Download](https://code.visualstudio.com/download) |
+</details>
 
-### Your Interactive Development Environment (IDE)
-3. Install [VS Code](https://code.visualstudio.com/download)
+## <img src="https://octodex.github.com/images/original.png" width=40px/> Finally, make sure that GitHub is ready to roll
 
-## Finally, make sure that GitHub is ready to roll
-If you don't already have one, make an account on [Github](https://github.com/). Then login and navigate to the top right user icon, click it, go to repositories, 
-   
-![github_repositories_button](https://user-images.githubusercontent.com/72572922/160047069-972923a9-6b9d-4f08-893c-efc75f6840f1.jpg)
+If you don't already have one, make an account on [Github](https://github.com/)
 
-and then click "New" (the green button).
+<details>
+  <summary>Viewing the Repositories</summary><br>
+Login and click on the top right user icon, then go to `repositories`. 
 
-![github_new_repository_button](https://user-images.githubusercontent.com/72572922/160047110-cfd04964-f235-4c50-b10c-06176f463fb9.jpg)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/37101144/162326947-3bfb4451-9854-41e8-9014-a02ed1322d66.png">
+</p>
+</details>
 
-5. Create the repository by inputting the following:
-* Repo name
-* Repo description
-* Make repo public
-* Add a README
-* Add .gitignore (Python template)
-* Add license (choose MIT)
 
-Then hit "Create Repository".
+<details>
+  <summary>Creating a New Repository</summary><br>
+     
+When viewing the respository page, click on `New` and proceed to create your repo.
 
-![github_create_repo](https://user-images.githubusercontent.com/72572922/160047121-b54a582b-da8e-434b-8ca3-05808a1b9b75.jpg)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/37101144/162327218-e1429ab2-2b24-4822-95bf-4411c2eb4a84.png">
+</p>
+<hr>
 
-# That's it for now!  And so it begins.... :)
+**Filling Respository Details**
+
+Create the repository by inputting the following:
+* `Repo name`
+* `Repo description`
+* Make repo `public`
+* Add a `README`
+* Add `.gitignore` (Python template)
+* Add `license` (choose MIT)
+
+Then click `Create Repository`.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/37101144/162327471-262a0931-c188-4976-8185-e70c4d108f71.png">
+</p>
+
+</details>
+
+### That's it for now!  And so it begins.... :)
