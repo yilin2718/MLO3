@@ -8,18 +8,6 @@
 
 # <h1 align="center" id="heading">:wave: Welcome to MLOps Cohort 3 (March 2022)!</h1>
 
-<details>
-  <summary>Contents</summary>
-
-- [:wave: Welcome!](#heading)
-- [:rocket: Let's Get Started!](#getting-started-with-the-unix-command-line)
-    - [Windows](#getting-started-with-the-unix-command-line)
-    - [Mac](#Mac)
-- [:octocat: Getting Started](#getting-started-with-the-unix-command-line)
-    - [Windows](#getting-started-with-the-unix-command-line)
-    - [Mac](#Mac)
-</details>
-
 Welcome to MLOps! :tada: Follow these steps to get your development environment teed up and aligned to the rest of the class.  This will ensure that we can hit the ground running this Saturday! :running:
 
 
