@@ -2,10 +2,9 @@
  "cells": [
   {
    "cell_type": "markdown",
-   "id": "45d7287d",
+   "id": "4409b2e8",
    "metadata": {},
    "source": [
-    "\n",
     "<p align = \"center\" draggable=”false” ><img src=\"https://user-images.githubusercontent.com/37101144/161836199-fdb0219d-0361-4988-bf26-48b0fad160a3.png\" \n",
     "     width=\"200px\"\n",
     "     height=\"auto\"/>\n",
@@ -16,7 +15,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "afa3ec7a",
+   "id": "8241138f",
    "metadata": {},
    "source": [
     "## ============= PART 1 =============\n",
@@ -61,7 +60,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "c30b7b6f",
+   "id": "24b10417",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -78,7 +77,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "42f3be92",
+   "id": "b13fd85d",
    "metadata": {},
    "source": [
     "## ============= PART 2 =============\n",
@@ -95,7 +94,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "7e078c12",
+   "id": "18aae563",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -114,7 +113,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "f3c3f44f",
+   "id": "71e99ef6",
    "metadata": {},
    "source": [
     "## ============= PART 3 =============\n",
@@ -129,7 +128,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "982fb74c",
+   "id": "7d9b0acb",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -143,7 +142,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "570b3cfa",
+   "id": "56a07cfc",
    "metadata": {},
    "outputs": [],
    "source": [
