@@ -14,5 +14,5 @@ Perform sentiment analysis on the top-level comments, designating them as positi
 Run:
 ```
 cd code_student/Week_2
-pip install transformers praw
+pip install transformers praw torch torchvision torchaudio
 ```
