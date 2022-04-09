@@ -1,11 +1,18 @@
 # Getting Started
+In this module we are going to walk through using the Reddit API, wrangling data, and then using a pre-trained HuggingFace model. 
 
-In this module we are going to walk through using the Reddit API, wrangling data, and then using HuggingFace model(s) to run inference on said data. The notebook for this week is broken up into those three parts.
+## Part I: [Reddit API](https://www.reddit.com/dev/api/)
+Establishing a connection to the Reddit API and then to the r/TSLA subreddit
 
-Please use `reddit_and_huggingface.ipynb` and go through the prompts depending on which section you are on. If you get stuck, feel free to look at `reddit_and_huggingface_answer_key.ipynb` for the way we would solve these problems.
+## Part II:  [r/TSLA Subreddit Top-Level Comments](https://www.reddit.com/r/TSLA/)
+Wrangle in the top-level comments from the r/TSLA subreddit
 
-## Install packages by running:
+## Part III:  [Hugging Face](https://huggingface.co/docs/transformers/quicktour)
+Perform sentiment analysis on the top-level comments, designating them as positive or negative
+
+# Install packages
+Run:
 ```
 cd code_student/Week_2
-pip install transformers praw torch torchvision torchaudio
+pip install transformers praw
 ```
