@@ -2,19 +2,20 @@
  "cells": [
   {
    "cell_type": "markdown",
-   "id": "9161636d",
+   "id": "c4828a34",
    "metadata": {},
    "source": [
-    "<img src=\"https://user-images.githubusercontent.com/37101144/161836199-fdb0219d-0361-4988-bf26-48b0fad160a3.png\" \n",
+    "<p align = \"center\" draggable=”false” ><img src=\"https://user-images.githubusercontent.com/37101144/161836199-fdb0219d-0361-4988-bf26-48b0fad160a3.png\" \n",
     "     width=\"200px\"\n",
     "     height=\"auto\"/>\n",
+    "</p>\n",
     "\n",
     "# Reddit and HuggingFace Stater Kit"
    ]
   },
   {
    "cell_type": "markdown",
-   "id": "71012ff7",
+   "id": "1986fd87",
    "metadata": {},
    "source": [
     "## ============= PART 1 =============\n",
@@ -59,7 +60,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "afc84090",
+   "id": "38bd6d6d",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -76,7 +77,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "76c8732d",
+   "id": "05e5a4d5",
    "metadata": {},
    "source": [
     "## ============= PART 2 =============\n",
@@ -93,7 +94,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "5470f91f",
+   "id": "51356003",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -112,7 +113,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "a380312d",
+   "id": "7db70809",
    "metadata": {},
    "source": [
     "## ============= PART 3 =============\n",
@@ -127,7 +128,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "8c9839bb",
+   "id": "c908986b",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -141,7 +142,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "ac3133f6",
+   "id": "5f580080",
    "metadata": {},
    "outputs": [],
    "source": [
