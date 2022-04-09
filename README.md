@@ -1,182 +1,105 @@
-{
- "cells": [
-  {
-   "cell_type": "markdown",
-   "id": "c4828a34",
-   "metadata": {},
-   "source": [
-    "<p align = \"center\" draggable=”false” ><img src=\"https://user-images.githubusercontent.com/37101144/161836199-fdb0219d-0361-4988-bf26-48b0fad160a3.png\" \n",
-    "     width=\"200px\"\n",
-    "     height=\"auto\"/>\n",
-    "</p>\n",
-    "\n",
-    "# Reddit and HuggingFace Stater Kit"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "id": "1986fd87",
-   "metadata": {},
-   "source": [
-    "## ============= PART 1 =============\n",
-    "The first part of this excercise is to figure out how to instantiate a Reddit API object using the [PRAW library](https://praw.readthedocs.io/en/stable/). This is a Python library that gives easy to understand interfaces to interact with the Reddit API.\n",
-    "\n",
-    "Your first task is to look through the [documentation here](https://praw.readthedocs.io/en/stable/code_overview/reddit_instance.html) and figure out how to instanstiate a Reddit instance. (hint: you only need to use `client_id`, `client_secret`, and `user_agent`)\n",
-    "\n",
-    "Make sure everyone in the group does this part! Follow the guide below on how to get your `client_id` and `client_secret`.\n",
-    "\n",
-    "### Steps for part 1:\n",
-    "1. Pull the `FourthBrain/ML03` repo locally so you can start development.\n",
-    "2. Open `reddit_and_huggingface.ipynb` and install the necessary packages for this lesson by running:\n",
-    "\n",
-    "    ```\n",
-    "    cd code_student/Week_2\n",
-    "    conda activate {your_virtual_environment_name}\n",
-    "    pip install transformers praw torch torchvision torchaudio\n",
-    "    ```\n",
-    "\n",
-    "3. Get your `client_id` and `client_secret` from Reddit by doing:\n",
-    "\n",
-    "* Make a Reddit account\n",
-    "* Follow the steps in this screenshot which are the first steps from this [guide](https://towardsdatascience.com/how-to-use-the-reddit-api-in-python-5e05ddfd1e5c).\n",
-    "\n",
-    "![instructions to set up reddit api](../../images/reddit_get_access.JPG)\n",
-    "\n",
-    "* Create a `secrets.py` file and include the following:\n",
-    "\n",
-    "    ```\n",
-    "    REDDIT_API_CLIENT_ID = \"\"\n",
-    "    REDDIT_API_CLIENT_SECRET = \"\"\n",
-    "    REDDIT_API_USER_AGENT = {can_be_any_string...for ex: \"marksbot\"}\n",
-    "    ```\n",
-    "\n",
-    "* Put `secrets.py` in `Week_2` so you can easily import it\n",
-    "\n",
-    "4. Read the [documentation here](https://praw.readthedocs.io/en/stable/code_overview/reddit_instance.html) and try to figure out how to instanstiate a Reddit instance object. \n",
-    "5. Lastly, once you have your Reddit instance object, figure out how to make a `subreddit` object for your favorite subreddit. (hint: look for `subreddit` in the documentation)\n",
-    "6. If time permits, continue to browse the documentation to prep for the next part of this excercise which will be to get submissions from the subreddit of your choosing."
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "38bd6d6d",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "import praw\n",
-    "from transformers import pipeline\n",
-    "import secrets\n",
-    "\n",
-    "reddit = praw.Reddit(\n",
-    "    # YOUR CODE\n",
-    ")\n",
-    "\n",
-    "subreddit = reddit.subreddit(#Your Subreddit)"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "id": "05e5a4d5",
-   "metadata": {},
-   "source": [
-    "## ============= PART 2 =============\n",
-    "\n",
-    "This next part you are going to figure out how to parse comments by using your `subreddit` instance object.\n",
-    "\n",
-    "### Todos for part 2:\n",
-    "1. How do I find the top 10 posts of all time from your favorite subreddit(s)? (hint: look at [\"Obtain Submission Instances from a Subreddit\"](https://praw.readthedocs.io/en/stable/getting_started/quick_start.html))\n",
-    "2. How do I parse comments from the post? (hint: look at [\"Obtain Submission Instances from a Subreddit\"](https://praw.readthedocs.io/en/stable/getting_started/quick_start.html))\n",
-    "\n",
-    "Put your scraped data into a list so you can use it in the next part. A good structure would be a list of lists where the inner list is one comment. (hint: you might need a DOUBLE nested FOR loop). This could take a minute or two once running."
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "51356003",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "from praw.models import MoreComments\n",
-    "\n",
-    "# Get top 100 posts of all time and iterate over them putting all comments and replies into a flat list\n",
-    "\n",
-    "top_comments = []\n",
-    "\n",
-    "for submission in subreddit.top(limit=10):\n",
-    "    for top_level_comment in submission.comments:\n",
-    "        if isinstance(top_level_comment, MoreComments):\n",
-    "                    continue\n",
-    "        top_comments.append(top_level_comment.body)"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "id": "7db70809",
-   "metadata": {},
-   "source": [
-    "## ============= PART 3 =============\n",
-    "\n",
-    "The last part is to somehow use the data you have scraped from Reddit to run a HuggingFace model inference. \n",
-    "\n",
-    "### Todos for part 3:\n",
-    "\n",
-    "Implement the [Sentiment Analysis](https://huggingface.co/docs/transformers/quicktour) Model. Do you see any potential downside to using the top level comment strategy in part 2?"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "c908986b",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "from transformers import pipeline\n",
-    "\n",
-    "# Your Code\n",
-    "\n",
-    "\n"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "5f580080",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "def get_random_comment(conversations):\n",
-    "    convo = random.choice(conversations)\n",
-    "    comment = random.choice(convo)\n",
-    "    return comment\n",
-    "\n",
-    "# Run sentiment analysis\n",
-    "sentiment_query_sentence = get_random_comment(top_comments) # grabs a random comment from the comment and replies list\n",
-    "sentiment = sentiment_model(sentiment_query_sentence) # \n",
-    "print(f\"Sentiment test: {sentiment_query_sentence} === {sentiment}\")"
-   ]
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3 (ipykernel)",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.9.7"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 5
-}
+<p align = "center" draggable=”false” ><img src="https://user-images.githubusercontent.com/37101144/161836199-fdb0219d-0361-4988-bf26-48b0fad160a3.png" 
+     width="200px"
+     height="auto"/>
+</p>
+
+
+
+# <h1 align="center" id="heading">:wave: Welcome to MLOps Cohort 3 (March 2022)!</h1>
+
+Welcome to MLOps! :tada: Follow these steps to get your development environment teed up and aligned to the rest of the class.  This will ensure that we can hit the ground running this Saturday! :running:
+
+
+## :rocket: Let's Get Started! 
+
+<details>
+  <summary>Windows</summary>
+
+
+* Install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install) using Powershell
+
+```powershell
+wsl --install -d Ubuntu-20.04
+```
+* Install [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) (You can even make it your [default!](https://devblogs.microsoft.com/commandline/windows-terminal-as-your-default-command-line-experience/))
+* Install [Ubuntu](https://www.microsoft.com/en-us/p/ubuntu/9pdxgncfsczv?activetab=pivot:overviewtab)
+
+Give it a test drive! 
+
+![WindowsTerminal](https://user-images.githubusercontent.com/72572922/160048214-37f08855-8b29-4c13-9d25-e0f69806f752.jpg)
+
+Continue by installing the following tools using [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) to setup your environment. When prompted, make sure to add `conda` to `init`.
+
+| Tool | Purpose | Command                                                                                           |
+| :-------- | :-------- | :------------------------------------------------------------------------------------------------ |
+| :snake: **Anaconda**  | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2021.11-Linux-x86_64.sh` <br> `bash Anaconda3-2021.11-Linux-x86_64.sh` <br> `source ~/.bashrc` |
+| :octocat: **Git**  | Version Control | `sudo apt update && sudo apt upgrade` <br> `sudo apt install git-all`   |
+| :memo: **VS Code** | Development Environment | [Download](https://code.visualstudio.com/download) (Windows version)|
+</details>
+
+<details>
+  <summary>Linux (Debian/Ubuntu)</summary><br>
+
+Open terminal using <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>. Enter the following commands in terminal to setup your environment. When prompted, make sure to add `conda` to `init`.
+| Tool | Purpose | Command                                                                                           |
+| :-------- | :-------- | :------------------------------------------------------------------------------------------------ |
+| :snake: **Anaconda**  | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2021.11-Linux-x86_64.sh` <br> `bash Anaconda3-2021.11-Linux-x86_64.sh` <br> `source ~/.bashrc` |
+| :octocat: **Git**  | Version Control | `sudo apt update && sudo apt upgrade` <br> `sudo apt install git-all`   |
+| :memo: **VS Code** | Development Environment | [Download](https://code.visualstudio.com/download) |
+</details>
+
+<details>
+  <summary>macOS</summary><br>
+
+Open terminal using <kbd>⌘</kbd>+<kbd>Space</kbd> and type `terminal`. Enter the following commands in terminal to setup your environment. When prompted, make sure to add `conda` to `init`.
+| Tool | Purpose | Command                                                                                           |
+| :-------- | :-------- | :------------------------------------------------------------------------------------------------ |
+| :snake: **Anaconda**  | Python & ML Toolkits | `wget https://repo.anaconda.com/archive/Anaconda3-2021.11-MacOSX-x86_64.sh` <br> `bash Anaconda3-2021.11-MacOSX-x86_64.sh` <br> `source ~/.bashrc` |
+| :octocat: **Git**  | Version Control | `sudo apt update && sudo apt upgrade` <br> `sudo apt install git-all`   |
+| :memo: **VS Code** | Development Environment | [Download](https://code.visualstudio.com/download) |
+</details>
+
+## <img src="https://octodex.github.com/images/original.png" width=40px/> Finally, make sure that GitHub is ready to roll
+
+If you don't already have one, make an account on [Github](https://github.com/)
+
+<details>
+  <summary>Viewing the Repositories</summary><br>
+
+Login and click on the top right user icon, then go to `repositories`. 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/37101144/162326947-3bfb4451-9854-41e8-9014-a02ed1322d66.png">
+</p>
+</details>
+
+
+<details>
+  <summary>Creating a New Repository</summary><br>
+
+When viewing the respository page, click on `New` and proceed to create your repo.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/37101144/162327218-e1429ab2-2b24-4822-95bf-4411c2eb4a84.png">
+</p>
+<hr>
+
+**Filling Respository Details**
+
+Create the repository by inputting the following:
+* `Repo name`
+* `Repo description`
+* Make repo `public`
+* Add a `README`
+* Add `.gitignore` (Python template)
+* Add `license` (choose MIT)
+
+Then click `Create Repository`.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/37101144/162327471-262a0931-c188-4976-8185-e70c4d108f71.png">
+</p>
+
+</details>
+
+### That's it for now!  And so it begins.... :)
